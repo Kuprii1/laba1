@@ -1,0 +1,90 @@
+.darkblue {
+    color: #00008b;
+    font-size: 25px;
+}
+.center{
+    text-align: center;
+}
+iframe{
+    width: 600px;
+    height: 800px;
+}
+.height300{
+    height: 300px;
+}
+.tr_con{
+    line-height: 20px;
+    font-style: italic;
+}
+body{
+    background-color: rgb(180, 180, 253);
+}
+:root {
+    --link-color: darkblue; 
+  }
+a{
+    color: black;
+    text-decoration: none; 
+}  
+a:hover {
+    text-decoration: underline;
+    color: violet; 
+}
+.important {
+    color: green;
+    color: blueviolet! important;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.ol{
+    font-size: 15px;    
+}
+.li{
+    width: 250px;
+    text-align: right;
+    color: blueviolet;
+}
+.table{
+    border: 3px solid black;
+}
+.width_height75{
+    width: 75px;
+    height: 75px;
+}
+.tr_table
+{
+    border: 2px solid black;
+    background-color: lightblue;
+    width: 350px;
+    text-align: center;
+}
+.dt{
+    font-size: 25px;
+    color: blueviolet;
+}
+.dd{
+    font-size: 20px;
+    color: rgb(137, 18, 38);
+    font-style: italic;
+}
+.th_left{
+    border: 2px solid black;
+    text-align: left;
+}
+.th_right{
+    border: 2px solid black;
+    text-align: right;
+}
+.th_center{
+    border: 2px solid black;
+    text-align: center;
+}
+.width350px{
+    width: 350px;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
