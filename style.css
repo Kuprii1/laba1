@@ -88,3 +88,45 @@ a:hover {
 .right{
     text-align: right;
 }
+
+/*4 лаба*/
+P strong {
+    color: goldenrod;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+}
+P B{
+    color: rgb(117, 117, 225);
+    font-size: 17px;
+    font-weight: bold;
+}
+.info_uffizi{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+I + B{
+    color: green;
+    font-style: italic;
+}
+B + I{
+    color: rgba(73, 66, 66, 0.742);
+}
+A > P {
+    color: cadetblue;
+}
+table > caption{
+    color: cadetblue;
+    font-size: 17px;
+    font-weight: 1000;
+}
+li > A {
+    color: rgb(63, 63, 207);
+    font-weight: lighter;
+}
+P > br {
+    color: green;
+}
+li > i{
+    color: rgb(57, 5, 57);
+    font-weight: bold;
+}
