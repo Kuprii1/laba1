@@ -5,8 +5,8 @@
 .center{
     text-align: center;
 }
-iframe{
-    width: 600px;
+#iframe{
+    width: 800px;
     height: 800px;
 }
 .height300{
@@ -19,17 +19,7 @@ iframe{
 body{
     background-color: rgb(180, 180, 253);
 }
-:root {
-    --link-color: darkblue; 
-  }
-a{
-    color: black;
-    text-decoration: none; 
-}  
-a:hover {
-    text-decoration: underline;
-    color: violet; 
-}
+
 .important {
     color: green;
     color: blueviolet! important;
@@ -130,3 +120,61 @@ li > i{
     color: rgb(57, 5, 57);
     font-weight: bold;
 }
+
+
+/*5*/
+.collection{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.span{
+    background-color: rgb(179, 134, 221);
+    
+}
+.div{
+    background-color: rgb(149, 120, 176);
+    border-radius: 100px;
+    padding: 20px;
+}
+.position{
+    position: fixed;
+    top: 20px; 
+    right: 10px; 
+}
+
+.image-container {
+    float: left; 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+}
+/*неперегляні*/
+a:link {
+    color: blue;
+  } 
+/* відвідані*/
+a:visited {
+    color: purple;
+  }
+/*наведений курсор*/
+a:hover {
+    color: rgb(121, 20, 175);
+  }
+/*активне*/
+a:active {
+    color: rgb(74, 119, 74);
+}
+li:first-child{
+    color: rgb(53, 8, 131);
+}
+
+
+.before:before {
+    content: "Початок цитати --> ";
+    color: grey;
+  }
+.after::after{
+    content: "  <-- автор цитати";
+    color: gray;
+}
+  
+ 
