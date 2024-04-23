@@ -12,9 +12,9 @@
         <p><b>Адреса музею:</b> П'ята авеню, 1000-й будинок <i>Нью-Йорк, США</i></p>
         <p><b>Час роботи:</b>
             <ul>
-            <li><i>Вівторок-четвер:</i> 10:00 - 17:30</li>
+            <li><i>Неділя-вівторок та четвер:</i> 10:00 - 17:00</li>
             <li><i>П'ятниця-субота:</i> 10:00 - 21:00</li>
-            <li><i>Понеділок:</i> Закрито</li></ul></p>
+            <li><i>Середа:</i> Закрито</li></ul></p>
             <p style="color: gray; font-size: 17px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Один з найвідоміших та найбільших мистецьких музеїв у світі, який розташований на Мангеттені.</p>
         <a href="https://www.metmuseum.org/"><p class="center">Офіційний сайт</p></a>
   
@@ -75,7 +75,13 @@
         <div class="image-container">
             <img src="pictures/met9.jpg" width="150px">
         </div>
-        <p><b>Анна Вінтур</b>, відома американська журналістка та головний редактор Vogue з 1998 року,<br> зіграла значну роль у створенні та розвитку 
+        <p><b id="anna">Анна Вінтур</b>, відома американська журналістка та головний редактор Vogue з 1998 року,<br> зіграла значну роль у створенні та розвитку 
         Інституту костюма (Met Costume Institute) як провідного світового центру досліджень та виставок моди.</p>
     </body>
+    <script>
+    let elements = document.querySelectorAll('ol > li:first-child'); 
+    for (let elem of elements) { 
+        alert(elem.innerHTML); 
+    }
+    </script>
 </html>

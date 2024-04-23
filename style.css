@@ -167,7 +167,6 @@ li:first-child{
     color: rgb(53, 8, 131);
 }
 
-
 .before:before {
     content: "Початок цитати --> ";
     color: grey;
@@ -177,4 +176,8 @@ li:first-child{
     color: gray;
 }
   
+/*6*/
+alert{
+    color: aquamarine;
+}
  

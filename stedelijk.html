@@ -10,14 +10,14 @@
 </head>
 <body >
     <head><b class="darkblue">Міський музей Амстердама</b></head>
-    <p><b>Адреса музею:</b> Паулюс Поттерстраат, 13 1071 DJ <i>Амстердам, Нідерланди</i></p>
+    <p id="t_content"><b>Адреса музею:</b> Паулюс Поттерстраат, 13 1071 DJ <i>Амстердам, Нідерланди</i></p>
     <p><b>Час роботи:</b> Вівторок-неділя: <i>10:00 - 18:00</i></p>
         <p>Художній музей у місті Амстердамі. Містить значне зібрання творів нідерландського, французького і сучасного світового образотворчого мистецтва.</p>
             <a href="https://www.stedelijk.nl/nl"><p class="center">Офіційний сайт</p></a>
         <p class="important">Колекції музею</p>
             <img class="height300" src="pictures/stedelijk1.jpg">
             <img class="height300" src="pictures/stedelijk2.jpg">
-    <table class="table">
+    <table class="table" >
         <caption class="caption_table">Картини, які зберігаються у міському музеї Амстердама</caption>
             <tr class="tr_table">
                 <th>Нічний дозор</th>
@@ -38,11 +38,20 @@
                 <td><a href="pictures/stedelijk_table4.jpg" target="_blank">фото 4</a></td>
             </tr>
             <tr class="tr_con tr_table">
-                <td>Груповий портрет загону стрільців Амстердама</td>
+                <td id="text">Груповий портрет загону стрільців Амстердама</td>
                 <td>Ця картина голландського майстра відома своїм використанням світла та композиції.</td>
                 <td>Ця картина зображує біблійну історію про будівництво Вавилонської вежі.</td>
-                <td>Ця картина зображує римську богиню Венеру, яка спить.</td>
+                <td id="outer">Ця картина зображує римську богиню Венеру, яка спить.</td>
             </tr>
     </table>
 </body>
+    <script>
+        alert(outer.outerHTML);
+
+        let textNode = document.getElementById("text").firstChild;
+        let textContent = textNode.data; 
+        alert(textContent);
+
+        alert(t_content.textContent);
+    </script>
 </html>

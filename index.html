@@ -15,12 +15,58 @@
             <li><a href="/stedelijk.html">Міський музей Амстердама</a></li>
             <li><a href="/uffizi.html">Галерея Уффіці</a></li>
                 </ul>
-            <p class="center"><b class="darkblue">Вигляди музеїв</b></p>
+            <p class="center"><b class="darkblue" id="replace">Вигляди музеїв</b></p>
         <p class="center"><img class="height300" src="pictures/main1.jpg">
         <img class="height300" src="pictures/main2.jpg">
         <img class="height300" src="pictures/main3.jpg"></p>
-            <h2 class="darkblue">Плаваючий фрейм</h2>
+            <h2 class="darkblue" id="remove">Плаваючий фрейм</h2>
                 <iframe id="iframe" src="pictures/main4.jpg"></iframe>
-                <span class="position">Раді Вас бачити!</span>         
+                <span class="position" >Раді Вас бачити!</span>     
+        <input class="i-name" type="text">
+        <input class="i-surname" type="text">
+        <input class="i-position" value="director"  type="text">
+        <button class="u-b">Get info </button>
+        <table>
+            <tr>
+                 <td><button class="bc-ch" id="bc">Change background</button></td>
+            </tr>    
+            <tr>
+                <td><button class="str-len">Show bigger string </button></td>               
+            </tr>    
+            <tr>
+                <td><button class="goToMet">Go to met website</button></td>
+            </tr>
+        </table>
     </body>
+    <script src="./dialogWithUser.js"></script>
+    <script src="./userInfo.js"></script>
+    <script src="./biggerString.js"></script>
+    <script src="./changeBackground.js"></script>
+        <script>
+            document.write("<h2>Що таке музей?</h2><p>Музей — це кладовище культури. </p>");
+        </script>
+    <script>
+        let newP = document.createElement("p");
+        newP.textContent = "Є речі, які треба побачити, щоб знати, що на них не треба дивитись."
+        document.body.append(newP); 
+    </script>
+    <script>
+        let node = document.createTextNode("Сторінка про ");
+        document.body.prepend(node)
+
+        let after = document.createTextNode("Картина в музеї чує більше дурниць, ніж що завгодно інше у світі.");
+        document.body.after(after);
+
+        let newP2 = document.createElement("p");
+        newP2.textContent = "Музеї, які представлені у нас";
+
+        let oldNode = document.getElementById("replace");
+
+        oldNode.replaceWith(newP2);
+
+        var nodeToRemove = document.getElementById("remove");
+
+        nodeToRemove.remove();
+
+    </script>
 </html>
