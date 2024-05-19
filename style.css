@@ -163,21 +163,33 @@ a:hover {
 a:active {
     color: rgb(74, 119, 74);
 }
-li:first-child{
-    color: rgb(53, 8, 131);
+ 
+/*7*/
+.help{
+    color: rgb(121, 20, 129);
+    background-color: rgb(168, 141, 233);
+    text-align: center;
+    font-style: italic;
 }
 
-.before:before {
-    content: "Початок цитати --> ";
-    color: grey;
-  }
-.after::after{
-    content: "  <-- автор цитати";
-    color: gray;
+#resizableImage {
+    width: 1000px;
+    transition: width 0.5s ease-in-out; /* Плавне зміна розміру */
+    cursor: pointer; /* Курсор, що вказує на можливість кліку */
 }
-  
-/*6*/
-alert{
-    color: aquamarine;
+
+.highlighted{
+    color: rgb(77, 58, 180);
+    background-color: white;
 }
- 
+
+.width400px
+{
+    width: 400px;
+    text-align: center;
+}
+
+.infoImg{
+    color: rgb(52, 103, 52);
+    text-decoration: solid;
+}

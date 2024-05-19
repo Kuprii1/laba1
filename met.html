@@ -19,7 +19,7 @@
         <a href="https://www.metmuseum.org/"><p class="center">Офіційний сайт</p></a>
   
     <h1 class="darkblue">Відділи музею мистецтва Метрополітен</h1>
-        <ol class="ol" type="I">
+        <ol id="List" class="ol" type="I">
             <li class="li">Картинна галерея</li>
             <li class="li">Західноєвропейська скульптура</li>
             <li class="li">Відділ Стародавнього Єгипту</li>
@@ -78,10 +78,6 @@
         <p><b id="anna">Анна Вінтур</b>, відома американська журналістка та головний редактор Vogue з 1998 року,<br> зіграла значну роль у створенні та розвитку 
         Інституту костюма (Met Costume Institute) як провідного світового центру досліджень та виставок моди.</p>
     </body>
-    <script>
-    let elements = document.querySelectorAll('ol > li:first-child'); 
-    for (let elem of elements) { 
-        alert(elem.innerHTML); 
-    }
-    </script>
+    <button id="button">Натисни мене</button>
+    <script src="methodHandleClick.js"></script> 
 </html>

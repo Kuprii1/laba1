@@ -10,63 +10,29 @@
     <body>
         <head><b class="darkblue">Відомі музеї</b></head>
             <p class="before">"<strong>Музеї</strong> - це місця, де час стоїть на місці, і де ми можемо зупинити його для того, щоб подивитися на минуле." - <i class="after">Сьюзен Л. Тейлор</i></p>
-                <ul type="square">
+                <ul id="List" type="square">
             <li><a href="/met.html">Музей мистецтва Метрополітен</a></li>
             <li><a href="/stedelijk.html">Міський музей Амстердама</a></li>
             <li><a href="/uffizi.html">Галерея Уффіці</a></li>
                 </ul>
             <p class="center"><b class="darkblue" id="replace">Вигляди музеїв</b></p>
-        <p class="center"><img class="height300" src="pictures/main1.jpg">
-        <img class="height300" src="pictures/main2.jpg">
-        <img class="height300" src="pictures/main3.jpg"></p>
-            <h2 class="darkblue" id="remove">Плаваючий фрейм</h2>
-                <iframe id="iframe" src="pictures/main4.jpg"></iframe>
+            <p class="center">
+        <img id="photo_uffizi" class="height300" src="pictures/main1.jpg" alt="Фото" onclick="changePhotoUffizi(event)">
+        <img id="photo_stedelijk" class="height300" src="pictures/main2.jpg" alt="Фото" onclick="changePhotoStedelijk(event)">
+        <img id="photo_met" class="height300" src="pictures/main3.jpg" alt="Фото" onclick="changePhotoMet(event)"></p>
+            <span class="help">Для того, щоб побачити інші ракурси вигляду музеїв, просто клікніть на них!</span>
                 <span class="position" >Раді Вас бачити!</span>     
-        <input class="i-name" type="text">
-        <input class="i-surname" type="text">
-        <input class="i-position" value="director"  type="text">
-        <button class="u-b">Get info </button>
-        <table>
-            <tr>
-                 <td><button class="bc-ch" id="bc">Change background</button></td>
-            </tr>    
-            <tr>
-                <td><button class="str-len">Show bigger string </button></td>               
-            </tr>    
-            <tr>
-                <td><button class="goToMet">Go to met website</button></td>
-            </tr>
-        </table>
+                <div><button id="myButton">Натисни мене!</button></div>
+                <div><img id="resizableImage" src="pictures/main4.jpg" alt="Resizable Image"></div>
+
+                <button data-behavior="message">Натисни для повідомлення</button>
+                <div class="message"></div>
+                <button data-behavior="uffizi">Перший музей</button>
+                <button data-behavior="met">Другий музей</button>
+                <button data-behavior="stedelijk">Третій музей</button>
     </body>
-    <script src="./dialogWithUser.js"></script>
-    <script src="./userInfo.js"></script>
-    <script src="./biggerString.js"></script>
-    <script src="./changeBackground.js"></script>
-        <script>
-            document.write("<h2>Що таке музей?</h2><p>Музей — це кладовище культури. </p>");
-        </script>
-    <script>
-        let newP = document.createElement("p");
-        newP.textContent = "Є речі, які треба побачити, щоб знати, що на них не треба дивитись."
-        document.body.append(newP); 
-    </script>
-    <script>
-        let node = document.createTextNode("Сторінка про ");
-        document.body.prepend(node)
-
-        let after = document.createTextNode("Картина в музеї чує більше дурниць, ніж що завгодно інше у світі.");
-        document.body.after(after);
-
-        let newP2 = document.createElement("p");
-        newP2.textContent = "Музеї, які представлені у нас";
-
-        let oldNode = document.getElementById("replace");
-
-        oldNode.replaceWith(newP2);
-
-        var nodeToRemove = document.getElementById("remove");
-
-        nodeToRemove.remove();
-
-    </script>
+    <script src="changePhoto.js"></script>
+    <script src="methodAddEventListener.js"></script>
+    <script src="methodRemoveEventListener.js"></script>
+    <script src="behaviorFunction.js"></script>
 </html>
