@@ -9,8 +9,9 @@
 </head>
     <body>
         <head><b class="darkblue">Відомі музеї</b></head>
-            <p class="before">"<strong>Музеї</strong> - це місця, де час стоїть на місці, і де ми можемо зупинити його для того, щоб подивитися на минуле." - <i class="after">Сьюзен Л. Тейлор</i></p>
-                <ul id="List" type="square">
+            <p class="before">"Картина в музеї чує більше дурниць, ніж що завгодно інше у світі."- <i class="after">Едмон де Ґонкур</i></p>
+            <div class="moveEdmon"><img class="pictureEdmon" src="pictures/main5.jpg"></div>   
+            <ul id="List" type="square">
             <li><a href="/met.html">Музей мистецтва Метрополітен</a></li>
             <li><a href="/stedelijk.html">Міський музей Амстердама</a></li>
             <li><a href="/uffizi.html">Галерея Уффіці</a></li>
@@ -25,14 +26,18 @@
                 <div><button id="myButton">Натисни мене!</button></div>
                 <div><img id="resizableImage" src="pictures/main4.jpg" alt="Resizable Image"></div>
 
-                <button data-behavior="message">Натисни для повідомлення</button>
+                <button data-behavior="message" id="myButton" >Натисни для повідомлення</button>
                 <div class="message"></div>
                 <button data-behavior="uffizi">Перший музей</button>
                 <button data-behavior="met">Другий музей</button>
                 <button data-behavior="stedelijk">Третій музей</button>
+                <div class="square">Чому не переходиш на сайти музеїв? </div>
+                
     </body>
     <script src="changePhoto.js"></script>
     <script src="methodAddEventListener.js"></script>
     <script src="methodRemoveEventListener.js"></script>
     <script src="behaviorFunction.js"></script>
+    <script src="styleMouse.js"></script>
+    <script src="move.js"></script>
 </html>
